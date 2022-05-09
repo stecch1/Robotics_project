@@ -2,3 +2,5 @@
 
 ## Project1:
 project assignment can be found [here](https://github.com/stecch1/Robotics_project/blob/main/project1/Project1.pdf)
+
+![](https://github.com/stecch1/Robotics_project/blob/main/project1.gif)
