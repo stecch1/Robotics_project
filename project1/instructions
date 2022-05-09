@@ -1,0 +1,39 @@
+PROJECT1
+
+Fabio Stecchi 10573273
+Mattia Bianchi 10614229
+
+
+We have created a single package (project1) and a single cpp file (src/kin.cpp) where we have done all the computation requested, in particular we have created a single class called Omni_robot where we have defined all the variables and all functions that we need. 
+We have calibrated our r,l,w,N parameters usign dynamic configurations and manually checking the values that better simulate the robot. That are (0.071, 38)
+
+
+LAUNCH:
+roslaunch project1 launcher.launch
+(In launcher.launch file there are also initial positions for all the 3 bags.)
+
+TF Tree:
+World->(broadcaster:tf_static)->odom->(broadcaster:project1)->base_link
+
+
+CHANGING ODOM STARTING POINT (NON DYN. PARAMETERS):
+rosparam set starting_x_param "numero"
+rosparam set starting_y_param "numero"
+rosparam set starting_theta_param "numero"
+
+
+SERVICES:
+rosservice call /set_odometry "x" "y" "theta"
+
+
+CHANGING INTEGRATION METHOD USING DYNAMIC PARAMETER:
+rosrun rqt_reconfigure rqt_reconfigure
+
+
+CUSTOM MESSAGE:
+Cust_Wheel_Speed.msg
+Header header
+float64 rpm_fl
+float64 rpm_fr
+float64 rpm_rr
+float64 rpm_rl

@@ -1,0 +1,10 @@
+<launch>
+
+    <node pkg="project1" type="project1" name="project1" output="screen" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="tf_static" args="0 0 0 0 0 0 1 world odom " />
+    
+   <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="tf_static" args="0.00815962441265583 0.0030597213190048933 0.3687083423137665 -0.011577633209526539 -0.02075166068971157 -0.019595127552747726 0.9995256066322327 world odom " /> -->
+    <!-- bag2 <node pkg="tf2_ros" type="static_transform_publisher" name="tf_static" args="0.024221817031502724 0.003742524655535817 0.372348427772522 0.0338488332927227 -0.05557403340935707 -0.0028051661793142557 0.997876763343811 world odom " /> -->
+    <!-- bag3 <node pkg="tf2_ros" type="static_transform_publisher" name="tf_static" args="0.005460123997181654 0.03997037187218666 0.3703613579273224 -0.010593205690383911 -0.024768192321062088 -0.006751589477062225 0.9996143579483032 world odom " /> -->
+</launch>
+
