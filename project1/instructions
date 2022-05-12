@@ -1,9 +1,5 @@
 PROJECT1
 
-Fabio Stecchi 10573273
-Mattia Bianchi 10614229
-
-
 We have created a single package (project1) and a single cpp file (src/kin.cpp) where we have done all the computation requested, in particular we have created a single class called Omni_robot where we have defined all the variables and all functions that we need. 
 We have calibrated our r,l,w,N parameters usign dynamic configurations and manually checking the values that better simulate the robot. That are (0.071, 38)
 
